@@ -28,7 +28,7 @@ function hidePhase() { ui.overlay.classList.remove('visible'); }
 function getRanking() { try { return JSON.parse(localStorage.getItem('copierAwakeningRanks') || '[]'); } catch { return []; } }
 function renderRanking() {
   const scores = getRanking();
-  ui.ranking.innerHTML = scores.length ? scores.map((score, index) => `<li><span class="rank-number">${index + 1}</span><strong>${escapeHtml(score.name)}</strong><span>${score.stage}단계</span></li>`).join('') : '<li class="empty-rank">아직 각성시킨 사람이 없습니다.</li>';
+  ui.ranking.innerHTML = scores.length ? scores.map((score, index) => `<li><span class="rank-number">${index + 1}</span><strong>${escapeHtml(score.name)}</strong><span>${score.stage}단계</span></li>`).join('') : '<li class="empty-rank">아직 신의 경지에 오른 사람이 없습니다.</li>';
 }
 function escapeHtml(value) { const node = document.createElement('span'); node.textContent = value; return node.innerHTML; }
 function saveRecord(finalStage) {
@@ -61,10 +61,10 @@ function clear() {
   stage++; runPeak = Math.max(runPeak, stage + 1); best = Math.max(best, runPeak); localStorage.setItem('copierPowerBest', best); ui.best.textContent = String(best).padStart(2, '0');
   setTimeout(() => { ui.machine.classList.remove('printing'); countdown(); }, 2600);
 }
-function stop() { active = false; cancelAnimationFrame(animation); ui.machine.classList.remove('running', 'shaking', 'printing'); ui.button.disabled = false; ui.button.textContent = '1단계부터 다시 각성'; }
+function stop() { active = false; cancelAnimationFrame(animation); ui.machine.classList.remove('running', 'shaking', 'printing'); ui.button.disabled = false; ui.button.textContent = '1단계부터 다시 도전'; }
 function fail(reason) { stop(); saveRecord(runPeak); stage = 0; configureStage(); ui.display.textContent = 'POWER ERROR'; message(`${reason} 최고 ${runPeak}단계 기록 후 1단계로 초기화됩니다.`, 'danger'); showPhase('BLACKOUT', '복사기가 삐— 하고 꺼졌습니다'); tone(65, .2); }
-function win() { stop(); saveRecord(10); ui.display.textContent = 'DIVINE COPY'; ui.time.textContent = '∞'; ui.fill.style.width = '100%'; message('기적입니다. 다이아몬드 종이 출력 성공! 복사기가 당신을 사내 신으로 등록했습니다.', 'success'); showPhase('LEGENDARY!', '다이아몬드 종이 출력 완료'); tone(980, .3); }
-ui.nicknameForm.addEventListener('submit', event => { event.preventDefault(); const proposed = ui.nicknameInput.value.trim().slice(0, 15); if (!proposed) return; nickname = proposed; localStorage.setItem('copierAwakeningNickname', nickname); ui.modal.classList.add('hidden'); message(`${nickname} 님, 복사기가 당신의 전기를 기다립니다.`); });
+function win() { stop(); saveRecord(10); ui.display.textContent = 'DIVINE COPY'; ui.time.textContent = '∞'; ui.fill.style.width = '100%'; message('기적입니다. 다이아몬드 종이 출력 성공! 당신은 복사의 신으로 기록되었습니다.', 'success'); showPhase('LEGENDARY!', '다이아몬드 종이 출력 완료'); tone(980, .3); }
+ui.nicknameForm.addEventListener('submit', event => { event.preventDefault(); const proposed = ui.nicknameInput.value.trim().slice(0, 15); if (!proposed) return; nickname = proposed; localStorage.setItem('copierAwakeningNickname', nickname); ui.modal.classList.add('hidden'); message(`${nickname} 님, 복사의 신화를 시작하세요.`); });
 ui.button.addEventListener('click', start);
 window.addEventListener('keydown', event => { if (event.code !== 'Space') return; event.preventDefault(); if (!event.repeat) active ? tap() : start(); });
 if (nickname) ui.modal.classList.add('hidden'); else setTimeout(() => ui.nicknameInput.focus(), 100);
