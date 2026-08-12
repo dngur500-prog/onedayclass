@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#15121e" />
+    <title>복사기에게 영혼 주입하기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <p class="eyebrow">DAILY USELESS GAME 001</p>
+        <h1>복사기에게 <em>영혼</em> 주입하기</h1>
+        <p class="subtitle">스페이스바를 연타해, 무표정한 복사기를 예술가로 만드세요.</p>
+      </header>
+
+      <section class="dashboard" aria-label="게임 현황">
+        <div><span>현재 단계</span><strong id="level">01</strong><small id="paper-name">A4 복사용지</small></div>
+        <div><span>남은 시간</span><strong id="time">--.-</strong><small>초</small></div>
+        <div><span>최고 도달</span><strong id="best">01</strong><small>단계</small></div>
+      </section>
+
+      <section class="copier-area" aria-live="polite">
+        <div class="ambient-glow"></div>
+        <div class="copy-machine" id="machine">
+          <div class="machine-top"><span class="warning-light"></span><span class="machine-brand">SOULJET 9000</span></div>
+          <div class="display"><span id="display-text">AWAITING SOUL</span></div>
+          <div class="paper-slot"><div class="paper" id="paper"><span id="paper-mark">A4</span></div></div>
+          <div class="machine-bottom"><span>NO JAM. ONLY VIBES.</span><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <section class="control-panel">
+        <div class="goal-row"><span id="goal-label">시작 준비 완료</span><span id="tap-count">0 / 0</span></div>
+        <div class="meter"><div id="meter-fill"></div></div>
+        <button id="start-button" type="button">영혼 주입 시작</button>
+        <p class="hint"><kbd>SPACE</kbd>를 연타하세요. 키를 누르고 있는 건 영혼이 아닙니다.</p>
+      </section>
+
+      <section class="status-card" id="status-card">
+        <p class="status-label">복사기 진단</p>
+        <p id="message">버튼을 누르면 오늘의 복사 노동이 시작됩니다.</p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
