@@ -2,6 +2,10 @@
 
 하루 안에 기획하고 완성하는, 짧고 이상한 브라우저 게임 모음입니다.
 
+## 🎮 지금 플레이하기
+
+[001. 복사의 신 — 브라우저에서 바로 플레이](https://dngur500-prog.github.io/onedayclass/games/copier-soul-injector/)
+
 ## 규칙
 
 - 게임 하나는 하루 안에 완성한다.
@@ -16,5 +20,6 @@
 
 스페이스바를 연타해 평범한 복사기를 신의 경지로 올리는 게임입니다. 실패하면 1단계부터 다시 시작하며, 마지막 다이아몬드 종이는 2%의 결정화 확률을 뚫어야 합니다.
 
+- 플레이: [복사의 신 바로 열기](https://dngur500-prog.github.io/onedayclass/games/copier-soul-injector/)
 - 실행: [games/copier-soul-injector/index.html](games/copier-soul-injector/index.html)을 브라우저로 열기
 - 조작: `Space` 연타
