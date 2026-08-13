@@ -6,6 +6,8 @@
 
 [001. 복사의 신 — 브라우저에서 바로 플레이](https://dngur500-prog.github.io/onedayclass/games/copier-soul-injector/)
 
+[002. 만두를 지켜줘 — 브라우저에서 바로 플레이](https://dngur500-prog.github.io/onedayclass/games/microwave-zero/)
+
 ## 규칙
 
 - 게임 하나는 하루 안에 완성한다.
@@ -27,4 +29,5 @@
 
 0.0초에서 정확히 멈춰 10단계의 야식을 완성하는 반사신경 게임입니다. 실패하면 1단계부터 다시 시작하며, 마지막 단계는 오차 ±24ms 안에 멈춰야 합니다.
 
+- 플레이: [만두를 지켜줘 바로 열기](https://dngur500-prog.github.io/onedayclass/games/microwave-zero/)
 - 조작: `Space` 한 번으로 가동, 0.0초에 한 번으로 정지
