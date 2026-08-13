@@ -4,9 +4,9 @@
 
 ## 🎮 지금 플레이하기
 
-[001. 복사의 신 — 브라우저에서 바로 플레이](https://dngur500-prog.github.io/onedayclass/games/copier-soul-injector/)
+[001. 복사의 신 — 즉시 플레이](https://dngur500-prog.github.io/onedayclass/games/copier-soul-injector/)
 
-[002. 만두를 지켜줘 — 브라우저에서 바로 플레이](https://dngur500-prog.github.io/onedayclass/games/microwave-zero/)
+[002. 만두를 지켜줘 — 즉시 플레이](https://dngur500-prog.github.io/onedayclass/games/microwave-zero/)
 
 ## 규칙
 
