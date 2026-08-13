@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#160f12" />
+    <title>만두를 지켜줘</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <p class="eyebrow">DAILY USELESS GAME 002 · 2026-08-13</p>
+        <h1>만두를 <em>지켜줘</em></h1>
+        <p class="subtitle">정확히 0.0초에 멈추면, 당신의 만두가 완성됩니다.</p>
+      </header>
+
+      <section class="stats" aria-label="게임 기록">
+        <div><span>현재 단계</span><strong id="stage">01</strong><small id="dish">식은 만두</small></div>
+        <div><span>최고 도달</span><strong id="best">01</strong><small>단계</small></div>
+        <div><span>정확도</span><strong id="precision">--</strong><small>밀리초</small></div>
+      </section>
+
+      <section class="microwave-zone" aria-live="polite">
+        <div class="heat-wave wave-a"></div><div class="heat-wave wave-b"></div>
+        <div class="microwave" id="microwave">
+          <img class="microwave-photo" src="assets/midnight-microwave.png" alt="따뜻하게 빛나는 빈티지 전자레인지 안의 만두 세 개" />
+          <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="timer-unit" id="timer-unit"><span class="power-dot"></span><div class="led" id="timer">--.-</div><small id="timer-caption">ZERO TARGET</small></div>
+        </div>
+        <div class="phase-overlay" id="phase-overlay"><strong id="phase-title">READY</strong><span id="phase-copy">시작 버튼 또는 SPACE</span></div>
+      </section>
+
+      <section class="control-panel">
+        <div class="goal-row"><span id="goal">0.0초에서 정지</span><span id="tolerance">오차 ±110ms</span></div>
+        <div class="start-row">
+          <button id="start-button" type="button">전자레인지 가동</button>
+          <p class="primary-hint"><kbd>SPACE BAR</kbd><span>0.0초에 정지!</span></p>
+        </div>
+        <p class="hint">길게 누르지 마세요. 단 한 번, 운명처럼 눌러야 합니다.</p>
+      </section>
+
+      <section class="bottom-grid">
+        <section class="status-card"><p class="status-label">조리 상태</p><p id="message">오늘의 만두가 당신을 기다립니다.</p></section>
+        <section class="ranking-card" aria-label="내 브라우저 명예의 전당">
+          <div class="ranking-heading"><p class="status-label">나의 명예의 전당</p><span>최고 도달 단계</span></div>
+          <ol id="ranking-list"><li class="empty-rank">아직 전자레인지 신이 없습니다.</li></ol>
+        </section>
+      </section>
+    </main>
+
+    <div class="nickname-modal" id="nickname-modal" role="dialog" aria-modal="true" aria-labelledby="nickname-title">
+      <form id="nickname-form" class="nickname-card">
+        <p class="eyebrow">MIDNIGHT SNACK OPERATOR</p>
+        <h2 id="nickname-title">야식 장인의 이름은?</h2>
+        <p>개인 기록에 표시할 닉네임을 정해주세요.</p>
+        <input id="nickname-input" maxlength="15" required autocomplete="nickname" placeholder="최대 15자" />
+        <button type="submit">만두 돌리러 가기</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
