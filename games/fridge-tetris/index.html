@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#18384a" />
+    <title>냉장고를 부탁해</title>
+    <link rel="stylesheet" href="style.css?v=3" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <p class="eyebrow">DAILY USELESS GAME 003 · 2026-08-14</p>
+        <h1>냉장고를 <em>부탁해</em></h1>
+        <p class="subtitle">남은 반찬통이 문 닫히기 전에 다 들어가야 합니다.</p>
+      </header>
+
+      <section class="stats" aria-label="게임 기록">
+        <div><span>정리 점수</span><strong id="score">0000</strong></div>
+        <div><span>정리한 선반</span><strong id="lines">00</strong></div>
+        <div><span>최고 점수</span><strong id="best">0000</strong></div>
+      </section>
+
+      <section class="game-area">
+        <aside class="food-panel">
+          <p class="panel-label">꺼낼 반찬통</p>
+          <div class="piece-box"><div id="piece-preview" class="piece-preview" aria-label="현재 반찬통"></div></div>
+          <p id="food-name" class="food-name">반찬통을 고르는 중</p>
+          <button id="rotate" type="button">↻ 돌리기 <kbd>R</kbd></button>
+          <p class="hint">반찬통을 돌린 뒤<br />냉장고 칸을 눌러 넣으세요.</p>
+        </aside>
+
+        <section class="fridge" aria-label="냉장고 내부">
+          <div class="fridge-top"><span>FRESH ZONE</span><i></i><span>-3°C</span></div>
+          <div id="board" class="board" role="grid" aria-label="냉장고 선반"></div>
+          <div class="fridge-bottom">오늘도 남은 음식은 살아남는다</div>
+          <div id="message" class="message" aria-live="polite">반찬통을 골라주세요.</div>
+        </section>
+      </section>
+
+      <section class="tips">
+        <p><b>목표</b> 가로 한 줄을 빈틈없이 채우면 선반이 정리됩니다.</p>
+        <p><b>주의</b> 반찬통은 아래로 떨어지지 않아요. 공간을 예쁘게 쓰는 게 실력입니다.</p>
+        <button id="restart" class="restart" type="button">새 냉장고 열기</button>
+      </section>
+
+      <div id="game-over" class="modal" hidden>
+        <div class="modal-card">
+          <p class="eyebrow">FRIDGE DOOR OPEN</p>
+          <h2 id="result-title">냉장고 포화</h2>
+          <p id="result-copy"></p>
+          <button id="play-again" type="button">다시 정리하기</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js?v=9"></script>
+  </body>
+</html>
