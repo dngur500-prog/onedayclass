@@ -31,3 +31,10 @@
 
 - 플레이: [만두를 지켜줘 바로 열기](https://dngur500-prog.github.io/onedayclass/games/microwave-zero/)
 - 조작: `Space` 한 번으로 가동, 0.0초에 한 번으로 정지
+
+### 003. 2026-08-14 — 냉장고를 부탁해
+
+남은 반찬통을 냉장고 선반에 차곡차곡 넣는 테트리스형 퍼즐 게임입니다. 클릭한 열을 기준으로 가장 가까운 빈자리로 자동 배치되며, 가로 한 줄을 채우면 선반이 정리됩니다.
+
+- 플레이: [냉장고를 부탁해 바로 열기](https://dngur500-prog.github.io/onedayclass/games/fridge-tetris/)
+- 조작: 냉장고 칸 클릭으로 배치, `R` 또는 회전 버튼으로 반찬통 회전
