@@ -38,3 +38,10 @@
 
 - 플레이: [냉장고를 부탁해 바로 열기](https://dngur500-prog.github.io/onedayclass/games/fridge-tetris/)
 - 조작: 냉장고 칸 클릭으로 배치, `R` 또는 회전 버튼으로 반찬통 회전
+
+### 004. 2026-08-15 — 태극기 수선소
+
+바람에 펄럭이는 태극기 사진을 여섯 조각의 지그소 퍼즐로 되돌리는 수선 게임입니다. 태극과 건·곤·감·리, 그리고 천의 주름을 단서로 제자리를 찾으세요.
+
+- 플레이: [태극기 수선소 바로 열기](https://dngur500-prog.github.io/onedayclass/games/taegeuk-puzzle-repair/)
+- 조작: 퍼즐 조각을 드래그해 빈 칸에 배치, 또는 조각과 빈 칸을 차례로 클릭

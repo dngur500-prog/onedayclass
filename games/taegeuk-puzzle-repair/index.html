@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#152844" />
+    <title>태극기 수선소</title>
+    <link rel="stylesheet" href="style.css?v=4" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header><p class="eyebrow">DAILY USELESS GAME 004 · 2026-08-15</p><h1>태극기 <em>수선소</em></h1><p class="subtitle">실사 태극기를 12개의 지그소 조각으로 다시 완성하세요.</p></header>
+      <section class="stats"><div><span>맞춘 조각</span><strong id="matched">0 / 12</strong></div><div><span>시도 횟수</span><strong id="tries">00</strong></div><div><span>최고 기록</span><strong id="best">--</strong></div></section>
+      <section class="repair-desk">
+        <figure class="reference"><figcaption>ORIGINAL PHOTO</figcaption><img src="assets/taegeukgi-in-the-wind.png" alt="바람에 펄럭이는 태극기 원본 사진" /><p>색·태극 곡선·천의 주름을 비교하세요.</p></figure>
+        <div class="board-side"><div class="board-heading"><span>TAEGEUKGI JIGSAW</span><b>12 PIECES</b></div><div id="board" class="board" aria-label="태극기 지그소 퍼즐판"><svg class="jigsaw-lines" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true"><path d="M100 0V35c18-7 18 24 0 17V100M200 0V35c-18-7-18 24 0 17V100M300 0V35c18-7 18 24 0 17V100M0 100h35c-7-18 24-18 17 0H100M100 100h35c7 18-24 18-17 0h82M200 100h35c-7-18 24-18 17 0h48M300 100h35c7 18-24 18-17 0h82M100 100v35c18-7 18 24 0 17v48M200 100v35c-18-7-18 24 0 17v48M300 100v35c18-7 18 24 0 17v48M0 200h35c7-18 24 0 17 10h48M100 200h35c-7 18 24 18 17 0h48M200 200h35c7-18 24 0 17 10h48M300 200h35c-7 18 24 18 17 0h65M100 200v35c18-7 18 24 0 17v48M200 200v35c-18-7-18 24 0 17v48M300 200v35c18-7 18 24 0 17v48" /></svg></div><p id="message" class="message" aria-live="polite">아래 조각을 끌어 알맞은 자리에 놓으세요.</p><button id="restart" class="restart" type="button">새 퍼즐 펼치기</button></div>
+      </section>
+      <section class="tray-section"><div class="tray-heading"><p class="eyebrow">SCATTERED PIECES</p><span>조각 클릭 → 보드 칸 클릭으로도 넣을 수 있어요.</span></div><div id="tray" class="tray" aria-label="흩어진 퍼즐 조각"></div></section>
+    </main>
+    <div id="win" class="modal" hidden><section class="win-card"><p class="eyebrow">TAEGEUKGI RESTORED</p><h2>8·15<br />대한독립만세</h2><p id="win-copy"></p><button id="again" type="button">다시 맞추기</button></section></div>
+    <script src="script.js?v=3"></script>
+  </body>
+</html>
