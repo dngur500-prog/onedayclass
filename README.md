@@ -8,6 +8,10 @@
 
 [002. 만두를 지켜줘 — 즉시 플레이](https://dngur500-prog.github.io/onedayclass/games/microwave-zero/)
 
+[003. 냉장고를 부탁해 — 즉시 플레이](https://dngur500-prog.github.io/onedayclass/games/fridge-tetris/)
+
+[004. 태극기 수선소 — 즉시 플레이](https://dngur500-prog.github.io/onedayclass/games/taegeuk-puzzle-repair/)
+
 ## 규칙
 
 - 게임 하나는 하루 안에 완성한다.
