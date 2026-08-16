@@ -12,6 +12,8 @@
 
 [004. 태극기 수선소 — 즉시 플레이](https://dngur500-prog.github.io/onedayclass/games/taegeuk-puzzle-repair/)
 
+[005. 고양이에게서 키보드 빼앗기 — 즉시 플레이](https://dngur500-prog.github.io/onedayclass/games/cat-keyboard-heist/)
+
 ## 규칙
 
 - 게임 하나는 하루 안에 완성한다.
@@ -49,3 +51,10 @@
 
 - 플레이: [태극기 수선소 바로 열기](https://dngur500-prog.github.io/onedayclass/games/taegeuk-puzzle-repair/)
 - 조작: 퍼즐 조각을 드래그해 빈 칸에 배치, 또는 조각과 빈 칸을 차례로 클릭
+
+### 005. 2026-08-16 — 고양이에게서 키보드 빼앗기
+
+고양이가 앞발로 누르려는 키를 먼저 눌러 중요한 문서를 지키는 15단계 반사신경 게임입니다. 단계가 오를수록 고양이의 앞발이 조금씩 빨라집니다.
+
+- 플레이: [고양이에게서 키보드 빼앗기 바로 열기](https://dngur500-prog.github.io/onedayclass/games/cat-keyboard-heist/)
+- 조작: 빛나는 키를 클릭하거나 실제 키보드의 같은 알파벳 키 누르기

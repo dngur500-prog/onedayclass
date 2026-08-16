@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#251d25" />
+    <title>고양이에게서 키보드 빼앗기</title>
+    <link rel="stylesheet" href="style.css?v=2" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header><p class="eyebrow">DAILY USELESS GAME 005 · 2026-08-16</p><h1>고양이에게서 <em>키보드 빼앗기</em></h1><p class="subtitle">고양이가 누르려는 키를 먼저 눌러 문서를 지키세요.</p></header>
+      <section class="stats"><div><span>방어 성공</span><strong id="saved">00</strong></div><div><span>고양이 오타</span><strong id="mistakes">00</strong></div><div><span>현재 단계</span><strong id="left">01 / 15</strong></div></section>
+      <section class="desk">
+        <div class="document"><div class="doc-top"><span>draft_important.txt</span><i></i><span id="status">대기 중</span></div><p id="text" class="text">오늘도 문서를 무사히 작성한다<span class="cursor">|</span></p><p id="note" class="note">고양이가 키보드를 노리고 있습니다.</p></div>
+        <aside class="cat-card"><img src="assets/cat-keyboard-heist.png" alt="키보드 위에 발을 올린 주황색 고양이" /><div class="cat-caption"><b id="cat-word">관찰 중</b><span id="cat-copy">아직은 얌전합니다.</span></div></aside>
+      </section>
+      <section class="keyboard-wrap"><div class="threat"><p>고양이의 앞발이 <b id="target">?</b> 키로 갑니다!</p><div class="meter"><i id="meter"></i></div></div><div id="keyboard" class="keyboard" aria-label="방어 키보드"></div><button id="start" type="button">문서 작성 시작</button><p class="hint">빛나는 키를 클릭하거나 실제 키보드에서 같은 글자를 누르세요.</p></section>
+    </main>
+    <div id="result" class="modal" hidden><section class="result-card"><p class="eyebrow">KEYBOARD SECURED</p><h2 id="result-title"></h2><p id="result-copy"></p><button id="again" type="button">다시 작성하기</button></section></div>
+    <script src="script.js?v=3"></script>
+  </body>
+</html>
